@@ -1,12 +1,21 @@
 import { Component, Vue } from "vue-property-decorator"
 import marked from "marked"
-import md from "./article/home.md"
+import templateMd from "./article/template.md"
+import router from "@/router";
 
 @Component({})
 export default class Article extends Vue {
-  public markdownText: string = md.source
+  public markdownTextObject: {[key: string]: string} = {
+    template: templateMd.source
+  }
 
   public compiledMarkdownText() {
-    return marked(this.markdownText)
+    const key: string = this.$route.params.postKey
+    const mdText: string = this.markdownTextObject[key]
+    if (mdText) {
+      return marked(mdText)
+    } else {
+      return router.push("/")
+    }
   }
 }
