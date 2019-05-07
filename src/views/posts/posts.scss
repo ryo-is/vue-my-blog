@@ -1,10 +1,35 @@
 .posts {
+  margin-top: 24px;
   position: relative;
 
   .md-content {
+    font-size: 1.25rem;
     left: 0;
     margin: auto;
     position: absolute;
     right: 0;
+
+    h1 {
+      font-size: 3rem;
+      margin: 18px 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin: 18px 0;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin: 18px 0;
+    }
+
+    h4 {
+      margin: 18px 0;
+    }
+
+    p {
+      margin: 7px 1rem;
+    }
   }
 }

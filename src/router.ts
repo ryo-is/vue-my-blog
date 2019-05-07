@@ -16,6 +16,10 @@ export default new Router({
     {
       path: "/posts",
       component: Posts,
+    },
+    {
+      path: "/posts/:postKey",
+      component: Posts,
     }
   ],
 })
