@@ -14,14 +14,13 @@ export default class App extends Vue {}
 @import "../config/config_setting";
 
 body {
-  background-color: $basic-dark-color;
+  background-color: $base-back-color;
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Hiragino Maru Gothic ProN", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: $basic-light-color;
+  color: $base-font-color;
 }
 </style>

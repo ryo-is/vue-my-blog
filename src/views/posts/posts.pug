@@ -1,0 +1,6 @@
+.posts
+  el-row
+    el-col.md-content(
+      :xs="22", :sm="18", :md="14", :lg="12", :xl="12",
+      v-html="compiledMarkdownText()"
+    )
